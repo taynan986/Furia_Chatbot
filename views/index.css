@@ -1,0 +1,116 @@
+body {
+    width: 100vw;
+    overflow: hidden;
+    margin: auto;
+}
+
+#root {
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+}
+
+#message-area {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+#message-layout {
+    width: 98%;
+    display: flex;
+}
+
+.message {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 50px;
+    max-width: 80%;
+    min-height: 25px;
+    word-break: break-all;
+    color: white;
+    overflow: hidden;
+    padding: 10px;
+    text-align: justify;
+}
+
+@media(hover: hover) {
+    .menu-item:hover {
+        cursor: pointer;
+        background-color: black;
+    }
+}
+
+.menu-item {
+    min-height: 5vh;
+    min-width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: chocolate;
+    border-radius: 10px;
+    color: white;
+}
+
+.menu-item:active {
+    background-color: chocolate;
+}
+
+.user-message {
+    margin-left: auto;
+    background-color: cornflowerblue;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 3px;
+}
+
+.bot-message {
+    background-color: chocolate;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#send-message-area {
+    /*height: 10%;*/
+    flex: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    gap: 20px;
+
+}
+
+#message-input {
+    height: 70%;
+    border-radius: 10px;
+    flex: 0.98;
+}
+
+#message-button {
+    border-radius: 20px;
+    flex: 0.01;
+    height: 70%;
+    display: none;
+}
+
+#message-button:active {
+    opacity: 0.7;
+}
