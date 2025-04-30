@@ -83,4 +83,7 @@ async function sendMessage(text){
     stateManager.getState().respondTo(text.toLowerCase());
 }
 
-msgBtn.addEventListener("click", () => sendMessage(msgInput.value));
+msgBtn.addEventListener("click", function(){
+    sendMessage(msgInput.value);
+    msgInput.value = "";
+});
